@@ -1,0 +1,28 @@
+body{
+    background: white;
+}
+
+th {
+    border: 1px solid #999;
+    background-color: cadetblue;
+    color: midnightblue;
+    padding: 1em 1em;
+    border-radius: 5px;
+
+}
+td {
+    border: 1px solid #999;
+    background-color: white;
+    color: darkblue;
+    padding: 1em 1em;
+}
+
+#table_body{
+    position: center;
+    margin: 0 auto;
+}
+
+#table{
+    position: center;
+    margin: 0 auto;
+}

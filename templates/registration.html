@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/CSS/style.css') }}">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>New account</h2>
+    <form method="post">
+        <p>
+            <label for="username" id="username">Username:</label>
+            <input type="text" name="username" id="username">
+        </p>
+        {% if exist %}
+            <p>Error: Username already exists, please choose another one!</p>
+        {% endif %}
+        <p>
+            <label for="password" id="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>

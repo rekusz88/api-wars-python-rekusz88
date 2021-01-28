@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<section class="confirmation">
+    <p class="login">Login</p>
+    <form method="post">
+        <p>
+            <label for="username" id="username">Email:</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="password" id="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <span class="login"><button type="submit">Submit</button></span>
+    </form>
+    {% if error %}
+        <p>Wrong username or password!</p>
+    {% endif %}
+    {% if incomplete %}
+        <p>Please, fill in both fields.</p>
+    {% endif %}
+</section>
 </body>
 </html>
